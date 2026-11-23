@@ -1,0 +1,7 @@
+# every number of the paper from the released answers (paper/paper_numbers.py, scripts/)
+numpy>=1.26
+pyarrow>=14
+# figures (paper/build.py)
+matplotlib>=3.8
+pillow>=10
+# re-exporting the answers from the original runs (export/) needs nothing more

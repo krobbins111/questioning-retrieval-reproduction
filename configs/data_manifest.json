@@ -1,0 +1,666 @@
+{
+ "docci_s2": [
+  {
+   "file": "docci_s2/queries.parquet",
+   "rows": 500,
+   "bytes": 43464,
+   "sha256": "bb39b1282890a920ec88873fe272dbaedf5428bfbe47e8cea8c37e5f8bbb02aa"
+  },
+  {
+   "file": "docci_s2/questions.parquet",
+   "rows": 3500,
+   "bytes": 86709,
+   "sha256": "7e5193e09edf9150d578e0dc24e4c867c745f4a43d4368ff05161f62a44273c0"
+  },
+  {
+   "file": "docci_s2/candidates.parquet",
+   "rows": 50000,
+   "bytes": 366396,
+   "sha256": "29c86980419ea60ea559b4ff3b52477e8bcecf4add3560698ab6c56d67d23b34"
+  },
+  {
+   "file": "docci_s2/answers.parquet",
+   "rows": 350000,
+   "bytes": 974419,
+   "sha256": "660ac3bfb1c6368254f27badf2c0d9a4c09572f766fe0e9d7f2e84a491752d22"
+  }
+ ],
+ "docci_s1": [
+  {
+   "file": "docci_s1/queries.parquet",
+   "rows": 500,
+   "bytes": 26409,
+   "sha256": "d8d62dc8b22b66d6b80f3ef643ae13546baeb5dd93355ffee5c15ee6f2ab7ab2"
+  },
+  {
+   "file": "docci_s1/questions.parquet",
+   "rows": 3500,
+   "bytes": 62514,
+   "sha256": "5f4c92bedb2fce39d0f741808e171dfa837afa843cc0fb4fd7c676692d49f764"
+  },
+  {
+   "file": "docci_s1/candidates.parquet",
+   "rows": 50000,
+   "bytes": 367918,
+   "sha256": "25f7fed4c84d797f4aa9193e89cdbbf8296880c79cdb473a582f355881b479a7"
+  },
+  {
+   "file": "docci_s1/answers.parquet",
+   "rows": 350000,
+   "bytes": 999712,
+   "sha256": "d8d5aa7a16bbd37818592e9c4906ad9fc0f829cc5099ef92380abadbfbaa89e6"
+  }
+ ],
+ "docci_s3": [
+  {
+   "file": "docci_s3/queries.parquet",
+   "rows": 500,
+   "bytes": 58055,
+   "sha256": "14a6987418010eb17507a532cb56cfb9dbb9e25eecc11bc20c7b796a823831f2"
+  },
+  {
+   "file": "docci_s3/questions.parquet",
+   "rows": 3500,
+   "bytes": 105840,
+   "sha256": "59de2ff6b8560a79d782934e6904673fd5ff2518f813193cc89d27188f192df9"
+  },
+  {
+   "file": "docci_s3/candidates.parquet",
+   "rows": 50000,
+   "bytes": 363237,
+   "sha256": "ab5bc62e905221ec4f5ef90292e1463bbef88c7e3281265fa53839aa2579cdb1"
+  },
+  {
+   "file": "docci_s3/answers.parquet",
+   "rows": 350000,
+   "bytes": 959503,
+   "sha256": "a86af471d039bf4ded91d15ac2f2c6102b034bf46858b179aeb22127ed45d8fe"
+  }
+ ],
+ "docci_s4": [
+  {
+   "file": "docci_s4/queries.parquet",
+   "rows": 500,
+   "bytes": 71678,
+   "sha256": "081a66f0b9d2f3391b989ed7d0a7b007bc1185631cd45996a71fbf7e7002ab57"
+  },
+  {
+   "file": "docci_s4/questions.parquet",
+   "rows": 3500,
+   "bytes": 121970,
+   "sha256": "bf7df9aec186acc151d738b900fa169bfd018ffc02d78ba99ff5893dbb1e6d2b"
+  },
+  {
+   "file": "docci_s4/candidates.parquet",
+   "rows": 50000,
+   "bytes": 362954,
+   "sha256": "373895ca4c9b3ade90845c88a124e7ae6274ef173ebf4e19e98f47db50e4d94f"
+  },
+  {
+   "file": "docci_s4/answers.parquet",
+   "rows": 350000,
+   "bytes": 952751,
+   "sha256": "a6e8fef8280d206f433ed83b2d6565240b53b6fe43e8ca92fb8e668badc7ca81"
+  }
+ ],
+ "docci_all": [
+  {
+   "file": "docci_all/queries.parquet",
+   "rows": 500,
+   "bytes": 117559,
+   "sha256": "c70be5844d310b0c17ae4caf3a283d470933086884aa60cc58df2dc0f6cc218c"
+  },
+  {
+   "file": "docci_all/questions.parquet",
+   "rows": 3500,
+   "bytes": 170615,
+   "sha256": "941798d61407368cd0c8acc0357af019f0780345c1050d2b7791cf0dd82c6164"
+  },
+  {
+   "file": "docci_all/candidates.parquet",
+   "rows": 50000,
+   "bytes": 362676,
+   "sha256": "75e7ccbb7b08d630c05c5d32efb3256bfd5d3da2c6a4e1226ecdbab853601c4b"
+  },
+  {
+   "file": "docci_all/answers.parquet",
+   "rows": 350000,
+   "bytes": 940815,
+   "sha256": "bc1b69a42e72e37cfbb989e0bc211fd987826a9e5b032a56239397e1cdc51892"
+  }
+ ],
+ "docci_heldout": [
+  {
+   "file": "docci_heldout/queries.parquet",
+   "rows": 500,
+   "bytes": 118971,
+   "sha256": "bfc9c5c441fe5d636631b5a6eb60d908d26d57283f73c69082d07bcd787b7671"
+  },
+  {
+   "file": "docci_heldout/questions.parquet",
+   "rows": 3500,
+   "bytes": 171532,
+   "sha256": "b89f37e1145177e31c9f9756c108054c011df24e88242b60e1ccab5ccd4947f0"
+  },
+  {
+   "file": "docci_heldout/candidates.parquet",
+   "rows": 100000,
+   "bytes": 730202,
+   "sha256": "ccf4219ea50497797d345112a6f6c2fe0c88ebeb8f5797ca1f0c6cced2fa469b"
+  },
+  {
+   "file": "docci_heldout/answers.parquet",
+   "rows": 700000,
+   "bytes": 1893399,
+   "sha256": "47fa99c1c7c3ac58410a3a08f499d00764c2f471dd79afdee4f60499185bbf01"
+  }
+ ],
+ "inquire_rerank_test": [
+  {
+   "file": "inquire_rerank_test/queries.parquet",
+   "rows": 160,
+   "bytes": 24502,
+   "sha256": "bcdf9f920fa38a7e23f210a0a0fb0b835bfbaf83b333b45a6719a159b1505837"
+  },
+  {
+   "file": "inquire_rerank_test/questions.parquet",
+   "rows": 1120,
+   "bytes": 18717,
+   "sha256": "53550e23e8f7e4ece20c36f488580fb707571417383c830fd39513eb2fc121e8"
+  },
+  {
+   "file": "inquire_rerank_test/candidates.parquet",
+   "rows": 16000,
+   "bytes": 255416,
+   "sha256": "8032a0c74525cd62ebea7ca7281b692ec7cd80d1fa1ec497ddc65ab1c16e4adf"
+  },
+  {
+   "file": "inquire_rerank_test/answers.parquet",
+   "rows": 112000,
+   "bytes": 384732,
+   "sha256": "c4a13f6fc03cede60f34b95f61a19126795b483d287742d71466f706c076e880"
+  }
+ ],
+ "inquire_full_vith_lc_test": [
+  {
+   "file": "inquire_full_vith_lc_test/queries.parquet",
+   "rows": 200,
+   "bytes": 166361,
+   "sha256": "35083fa21ddb7e9a7291fd767ad50002549323cc83169b389fe660d106102f34"
+  },
+  {
+   "file": "inquire_full_vith_lc_test/questions.parquet",
+   "rows": 1400,
+   "bytes": 22438,
+   "sha256": "f4937663fa1a15ea0dd4467b6e39605b0a735fa41795aaa6a1e2f050450f1867"
+  },
+  {
+   "file": "inquire_full_vith_lc_test/candidates.parquet",
+   "rows": 100000,
+   "bytes": 1093029,
+   "sha256": "c414a68529031b8628c91ba7ca7f1516f5587ff4b7e55d65137a146f280ba444"
+  },
+  {
+   "file": "inquire_full_vith_lc_test/answers.parquet",
+   "rows": 700000,
+   "bytes": 2509169,
+   "sha256": "d8b7f18f4499607f432e66cde97c80d4442df306d75e25f9972c92bd33e279af"
+  },
+  {
+   "file": "inquire_full_vith_lc_test/firststage.parquet",
+   "rows": 200000,
+   "bytes": 1886844,
+   "sha256": "3b906c13753a140cc1dcb6c78db2c7f95f3c3d01e4c652fffdcaff46deea76dc"
+  }
+ ],
+ "inquire_full_vith_lc_val": [
+  {
+   "file": "inquire_full_vith_lc_val/queries.parquet",
+   "rows": 50,
+   "bytes": 40268,
+   "sha256": "b0c6f84a5c7e705ccde48b5a6505c5aea3c437c4b048c51eacf029b1bb01e31b"
+  },
+  {
+   "file": "inquire_full_vith_lc_val/questions.parquet",
+   "rows": 350,
+   "bytes": 9101,
+   "sha256": "b4c86dfc6e1d19bd2de37ed5e8e7e5f69d11c4bc846cb208af63abe6b8bac90f"
+  },
+  {
+   "file": "inquire_full_vith_lc_val/candidates.parquet",
+   "rows": 25000,
+   "bytes": 299751,
+   "sha256": "b60f4b6178d73c5cd7285463bd2fcd3fa1606783f22110ab0dc1b894aec4006c"
+  },
+  {
+   "file": "inquire_full_vith_lc_val/answers.parquet",
+   "rows": 175000,
+   "bytes": 651937,
+   "sha256": "b21090ab553e4c7f00c260fe01f81393c2daddca7a7475d4c7a1df266c25a447"
+  },
+  {
+   "file": "inquire_full_vith_lc_val/firststage.parquet",
+   "rows": 50000,
+   "bytes": 572973,
+   "sha256": "35541c4ab0004b63fb875c3eed726b38880c191b8613f402afb6bd1ce81aa3d3"
+  }
+ ],
+ "inquire_full_siglip2_lc_test": [
+  {
+   "file": "inquire_full_siglip2_lc_test/queries.parquet",
+   "rows": 200,
+   "bytes": 166255,
+   "sha256": "1bfca746ce595a210676033bd00a26bfd0f956113f2907118e66de3294b4307d"
+  },
+  {
+   "file": "inquire_full_siglip2_lc_test/questions.parquet",
+   "rows": 1400,
+   "bytes": 22438,
+   "sha256": "f4937663fa1a15ea0dd4467b6e39605b0a735fa41795aaa6a1e2f050450f1867"
+  },
+  {
+   "file": "inquire_full_siglip2_lc_test/candidates.parquet",
+   "rows": 100000,
+   "bytes": 987645,
+   "sha256": "d32769032b85dd5d25eb543ee1fd2c0d7bfd075fbccd5790bf91b9daa160d516"
+  },
+  {
+   "file": "inquire_full_siglip2_lc_test/answers.parquet",
+   "rows": 700000,
+   "bytes": 2495982,
+   "sha256": "8b84384bb3bb6d370caa88e5b3bd637862c4bde38091e9203389d37ef4a817fd"
+  },
+  {
+   "file": "inquire_full_siglip2_lc_test/firststage.parquet",
+   "rows": 200000,
+   "bytes": 2448431,
+   "sha256": "5fbcbbc2e8f78cd917a0c4f6d78b7ebeb44b97a1c1d731ad6d52daec19243c30"
+  }
+ ],
+ "inquire_full_siglip2_lc_val": [
+  {
+   "file": "inquire_full_siglip2_lc_val/queries.parquet",
+   "rows": 50,
+   "bytes": 40300,
+   "sha256": "9b94eaf4645eedf8a17070786bd3ae31ef00142d932e06aa5e665319dc4095b5"
+  },
+  {
+   "file": "inquire_full_siglip2_lc_val/questions.parquet",
+   "rows": 350,
+   "bytes": 9101,
+   "sha256": "b4c86dfc6e1d19bd2de37ed5e8e7e5f69d11c4bc846cb208af63abe6b8bac90f"
+  },
+  {
+   "file": "inquire_full_siglip2_lc_val/candidates.parquet",
+   "rows": 25000,
+   "bytes": 273793,
+   "sha256": "f45e39d44052958aa63c929a6727d700b9420868dc6d5ec4921888bd1eb4269d"
+  },
+  {
+   "file": "inquire_full_siglip2_lc_val/answers.parquet",
+   "rows": 175000,
+   "bytes": 653666,
+   "sha256": "b179921d55219af4bcfeb33e41682b236928229206a7893f7084e0d87fcef329"
+  },
+  {
+   "file": "inquire_full_siglip2_lc_val/firststage.parquet",
+   "rows": 50000,
+   "bytes": 762423,
+   "sha256": "b6753b157fb197766268759fe1be63e8928bcc72bb5b75361e2a580faef96d2a"
+  }
+ ],
+ "clef_flash": [
+  {
+   "file": "clef_flash/answers.parquet",
+   "rows": 2087988,
+   "bytes": 13611990,
+   "sha256": "9dfd74d3ce85bc3e023d1981f414e14f3130562061c2adc5f20fcecb0ddc039e"
+  }
+ ],
+ "inquire_rerank_val": [
+  {
+   "file": "inquire_rerank_val/queries.parquet",
+   "rows": 40,
+   "bytes": 9233,
+   "sha256": "e7d1c55f5e9ab19f4fe10e515d1e68fe6c164f2125118dc2c2831ce34a52f2d3"
+  },
+  {
+   "file": "inquire_rerank_val/questions.parquet",
+   "rows": 280,
+   "bytes": 8110,
+   "sha256": "9eca2988ef3c2f33d7fc5d28c1abd9369751a93807f826f0ded7414bbf299364"
+  },
+  {
+   "file": "inquire_rerank_val/candidates.parquet",
+   "rows": 4000,
+   "bytes": 44255,
+   "sha256": "a44def0cedf5613ce8194bee251d1c2fff75fa9cc3d352e75c9f08e33e601d17"
+  },
+  {
+   "file": "inquire_rerank_val/answers.parquet",
+   "rows": 28000,
+   "bytes": 91752,
+   "sha256": "a1de4801eda4dda53cb4279b51ac9d47319e5678ff50a8c3ba6524c88919e904"
+  }
+ ],
+ "winoground": [
+  {
+   "file": "winoground/answers.parquet",
+   "rows": 4800,
+   "bytes": 8764,
+   "sha256": "4ec9b74da8a2778aa2fff7259bd3d3a93abf954c379eb9ed3f195b23cefd3b85"
+  }
+ ],
+ "docci_deep200_s1": [
+  {
+   "file": "docci_deep200_s1/queries.parquet",
+   "rows": 500,
+   "bytes": 26490,
+   "sha256": "70b4277dd98574d3597130a1ddbfd10070abf26c5fd85d947db1e0bd09780c91"
+  },
+  {
+   "file": "docci_deep200_s1/questions.parquet",
+   "rows": 3500,
+   "bytes": 62514,
+   "sha256": "5f4c92bedb2fce39d0f741808e171dfa837afa843cc0fb4fd7c676692d49f764"
+  },
+  {
+   "file": "docci_deep200_s1/candidates.parquet",
+   "rows": 117739,
+   "bytes": 868728,
+   "sha256": "48ead08472fba6be21376fbeff6676eab32867e8f450b08f153f488f328d8b44"
+  },
+  {
+   "file": "docci_deep200_s1/answers.parquet",
+   "rows": 824173,
+   "bytes": 2373998,
+   "sha256": "72d510ed57c743b277548f8baefba72bd2bd033fbe97a38c04710e28df620402"
+  },
+  {
+   "file": "docci_deep200_s1/steered.parquet",
+   "rows": 50000,
+   "bytes": 99175,
+   "sha256": "814eded372d7c77bab72871a8d23b2242e4e23f18c8ec2425909da3c806940c9"
+  }
+ ],
+ "docci_deep200_s2": [
+  {
+   "file": "docci_deep200_s2/queries.parquet",
+   "rows": 500,
+   "bytes": 43545,
+   "sha256": "d7894d42fd24dfca9244e96e061483628b74df45a1a0105dec795c276f3b7e4b"
+  },
+  {
+   "file": "docci_deep200_s2/questions.parquet",
+   "rows": 3500,
+   "bytes": 86709,
+   "sha256": "7e5193e09edf9150d578e0dc24e4c867c745f4a43d4368ff05161f62a44273c0"
+  },
+  {
+   "file": "docci_deep200_s2/candidates.parquet",
+   "rows": 117040,
+   "bytes": 869169,
+   "sha256": "a963de269489e560f6709dc44b927d100b2916a74257987fbcd12c1668cbe20e"
+  },
+  {
+   "file": "docci_deep200_s2/answers.parquet",
+   "rows": 819280,
+   "bytes": 2284472,
+   "sha256": "f24f2991c155c46a8c6f38af8180cf55d837007ab7b97e3d4234d666637dbc1f"
+  },
+  {
+   "file": "docci_deep200_s2/steered.parquet",
+   "rows": 50000,
+   "bytes": 99039,
+   "sha256": "0b2000285428deed7b637064e8410c8573b348fa5285a9ec77a799d589ee5b71"
+  }
+ ],
+ "docci_deep200_s3": [
+  {
+   "file": "docci_deep200_s3/queries.parquet",
+   "rows": 500,
+   "bytes": 58136,
+   "sha256": "46e9c0b7fa80313b81da88b994f693921412ac82b5bce97a3391a143f56bd103"
+  },
+  {
+   "file": "docci_deep200_s3/questions.parquet",
+   "rows": 3500,
+   "bytes": 105840,
+   "sha256": "59de2ff6b8560a79d782934e6904673fd5ff2518f813193cc89d27188f192df9"
+  },
+  {
+   "file": "docci_deep200_s3/candidates.parquet",
+   "rows": 116813,
+   "bytes": 866516,
+   "sha256": "dda4110327a0cc45894402d0765e94abde0e5f23c41b680eb3fde6aa41c5104e"
+  },
+  {
+   "file": "docci_deep200_s3/answers.parquet",
+   "rows": 817691,
+   "bytes": 2251096,
+   "sha256": "b2206f551aa71f32f7e4fa4f8149119d466dd6391c91e25d6b17ebbf7a434d32"
+  },
+  {
+   "file": "docci_deep200_s3/steered.parquet",
+   "rows": 50000,
+   "bytes": 99012,
+   "sha256": "e7314406d525866782d054bd0de4ed6082c59034570990590643cafb2263bcba"
+  }
+ ],
+ "docci_deep200_s4": [
+  {
+   "file": "docci_deep200_s4/queries.parquet",
+   "rows": 500,
+   "bytes": 71759,
+   "sha256": "bf2a9c505ab851b850b9a038303dbb72e7a9c4eba2783c62e40352a114ada2a6"
+  },
+  {
+   "file": "docci_deep200_s4/questions.parquet",
+   "rows": 3500,
+   "bytes": 121970,
+   "sha256": "bf7df9aec186acc151d738b900fa169bfd018ffc02d78ba99ff5893dbb1e6d2b"
+  },
+  {
+   "file": "docci_deep200_s4/candidates.parquet",
+   "rows": 116525,
+   "bytes": 853889,
+   "sha256": "df6bafc8c0ae9f09dc299bc43ccc425a1b98773de2f11d0a2d3f419810840e84"
+  },
+  {
+   "file": "docci_deep200_s4/answers.parquet",
+   "rows": 815675,
+   "bytes": 2226914,
+   "sha256": "742f951afa5aa60863ac88dfa120c8d587533e38d23785c6070eb9c435b55ae5"
+  },
+  {
+   "file": "docci_deep200_s4/steered.parquet",
+   "rows": 50000,
+   "bytes": 99039,
+   "sha256": "245443410998cf6e94862b03f59356fcbc8a54da0c48c162a4860ad7d219e085"
+  }
+ ],
+ "docci": [
+  {
+   "file": "docci/images.parquet",
+   "rows": 5000,
+   "bytes": 33922,
+   "sha256": "46978f3a4a86fb647decffc49653c3d681f755eccf662fc6bccfa2d99983c754"
+  },
+  {
+   "file": "docci/targets.parquet",
+   "rows": 1000,
+   "bytes": 263988,
+   "sha256": "20470889a69900ddb7a92c249fbebfe25a3afbe30a0e27ac67e9eb7b4a961d5d"
+  }
+ ],
+ "inquire_gpt4o_pool": [
+  {
+   "file": "inquire_gpt4o_pool/pool.parquet",
+   "rows": 25000,
+   "bytes": 852993,
+   "sha256": "279c87346870f00f704b651c545bc67427a9cc5381d556c39c63b445a01eee16"
+  }
+ ],
+ "inquire_taxa": [
+  {
+   "file": "inquire_taxa/taxa.parquet",
+   "rows": 303799,
+   "bytes": 1819002,
+   "sha256": "2c5a1b89dca7b9dfc1b4657770a2f1480d5ed86ef6adf1bef9397b5642013e68"
+  }
+ ],
+ "bank_inquire_rerank_test": [
+  {
+   "file": "bank_inquire_rerank_test/queries.parquet",
+   "rows": 160,
+   "bytes": 26762,
+   "sha256": "cb38e9a7746f27f96a45d6538b901e54d23f03ca0f620c6ca0443da54ffb537d"
+  },
+  {
+   "file": "bank_inquire_rerank_test/photos.parquet",
+   "rows": 16000,
+   "bytes": 279828,
+   "sha256": "c8a8d124bcc47ef28d0eee24c5b4928c23ccf541b78af6a2d920da99e7f0d94a"
+  },
+  {
+   "file": "bank_inquire_rerank_test/questions.parquet",
+   "rows": 5032,
+   "bytes": 130225,
+   "sha256": "19b9348bdfcf778eb9675162c173953dd1faed1ac967701bcf00e53197cf5a06"
+  },
+  {
+   "file": "bank_inquire_rerank_test/answers.parquet",
+   "rows": 503200,
+   "bytes": 1331095,
+   "sha256": "ef504b11813e37ce2dc4ad6906b585c3814adab6e00947680197520e192f2dce"
+  }
+ ],
+ "bank_inquire_full_vith_lc_val": [
+  {
+   "file": "bank_inquire_full_vith_lc_val/queries.parquet",
+   "rows": 50,
+   "bytes": 3697,
+   "sha256": "306395837d6fca1c967bf8d8ddbe99e3e66fe9b09a73bc29b9b6f9e517cef1ff"
+  },
+  {
+   "file": "bank_inquire_full_vith_lc_val/photos.parquet",
+   "rows": 25000,
+   "bytes": 522376,
+   "sha256": "98619aec838dd3717696d0c842e04d3a2b576f6bc8dd66e9673de3a4294ee4b4"
+  },
+  {
+   "file": "bank_inquire_full_vith_lc_val/questions.parquet",
+   "rows": 797,
+   "bytes": 44790,
+   "sha256": "66119a4b672bbff4f7c9854f51c683ec35786d95bd4e0fff2016bc11c721b6ae"
+  },
+  {
+   "file": "bank_inquire_full_vith_lc_val/answers.parquet",
+   "rows": 398500,
+   "bytes": 1208756,
+   "sha256": "355f2fe397b56167439d8e5f1790b60506c8022f4f9709e39e4499e24b9948e8"
+  }
+ ],
+ "bank_docci_s1": [
+  {
+   "file": "bank_docci_s1/queries.parquet",
+   "rows": 150,
+   "bytes": 30426,
+   "sha256": "5e78e243a035e1d127e066db987ccbdd5d10f19b6b3926bdd596af6adf2872c7"
+  },
+  {
+   "file": "bank_docci_s1/photos.parquet",
+   "rows": 15000,
+   "bytes": 212799,
+   "sha256": "8ea0115d25a8ad14355afa3d865b6144c1f7f199e9c7d71fe65896b674570075"
+  },
+  {
+   "file": "bank_docci_s1/questions.parquet",
+   "rows": 5870,
+   "bytes": 144449,
+   "sha256": "b5aac36fb406b8ab28994973ccdc33e264fc9922b5285cf1114628a3ad50b6a7"
+  },
+  {
+   "file": "bank_docci_s1/answers.parquet",
+   "rows": 587000,
+   "bytes": 1539610,
+   "sha256": "d40453f3b2e9c0260a2e5e3005116625b02722470f19706203b123cc643d407c"
+  }
+ ],
+ "costs": [
+  {
+   "file": "costs/ledgers.parquet",
+   "rows": 2,
+   "bytes": 2802,
+   "sha256": "115de7fd0412a65538b849fff04a359cb9f9df13030fa8349fe87d9c7327a579"
+  }
+ ],
+ "inquire_full_streams": [
+  {
+   "file": "inquire_full_streams/streams.parquet",
+   "rows": 11233,
+   "bytes": 5894738,
+   "sha256": "65e91ebbabd274cc3e910593dcd7055242e33c4aef54477c55b6e0da985a0220"
+  }
+ ],
+ "bank_inquire_wide_val": [
+  {
+   "file": "bank_inquire_wide_val/queries.parquet",
+   "rows": 50,
+   "bytes": 12044,
+   "sha256": "5ab01d5ada886c74f03202eeb51ea399bba21f17ff9387a92d80f6bb032b434b"
+  },
+  {
+   "file": "bank_inquire_wide_val/photos.parquet",
+   "rows": 43712,
+   "bytes": 1861917,
+   "sha256": "2a92f80ffb5cb5a0ded6063dcffb344cf8b3da94a677117836d3488ba3b079ea"
+  },
+  {
+   "file": "bank_inquire_wide_val/questions.parquet",
+   "rows": 1594,
+   "bytes": 47577,
+   "sha256": "b322c38bc0946c37b0971d806ba7ac2adec94d082ee294a78d3310a23c27eca3"
+  },
+  {
+   "file": "bank_inquire_wide_val/answers.parquet",
+   "rows": 1392096,
+   "bytes": 4146996,
+   "sha256": "62daccdb6f21f9c800a934132e0fd67d80ecc71a93b0fe7d8f2938caceca70c2"
+  }
+ ],
+ "bank_inquire_wide_test": [
+  {
+   "file": "bank_inquire_wide_test/queries.parquet",
+   "rows": 200,
+   "bytes": 32668,
+   "sha256": "9024b520788106074d395c0652e3255a5c33195df3145a80b14000adfc4c8563"
+  },
+  {
+   "file": "bank_inquire_wide_test/photos.parquet",
+   "rows": 180570,
+   "bytes": 6436057,
+   "sha256": "2eaedd4e46ad1f631e3585f09d6f1952cbb67a585e1b78af749ae7f058437962"
+  },
+  {
+   "file": "bank_inquire_wide_test/questions.parquet",
+   "rows": 6254,
+   "bytes": 157224,
+   "sha256": "5ace17c8e9a66a21e93bfdc3b0c7083903ce5e2bd2164dbc464587ae4650c566"
+  },
+  {
+   "file": "bank_inquire_wide_test/answers.parquet",
+   "rows": 5638672,
+   "bytes": 16939008,
+   "sha256": "dbfb83eeec07a46d1f77db36b17f19299aa043584f6fd72b880b5144740fa979"
+  }
+ ],
+ "inquire_full_steer": [
+  {
+   "file": "inquire_full_steer/searches.parquet",
+   "rows": 1238,
+   "bytes": 4147152,
+   "sha256": "a37bd8ae68b2750071c53710a551afa47b904ad26cf33667d848f5818f9c2a73"
+  }
+ ]
+}

@@ -1,0 +1,295 @@
+Table 1. Ranking against published numbers
+  INQUIRE-Rerank, search alone (AP)                                         53.6   paper    53.6   ok
+  INQUIRE-Rerank, with the verifier                                         63.9   paper    63.9   ok
+  Divide and Conquer's queries (outside Species)                             154   paper     154   ok
+    their search alone                                                      54.1   paper    54.1   ok
+    their verifier                                                          64.8   paper    64.8   ok
+  INQUIRE-Fullrank vith_lc, search alone (mAP@50)                           33.4   paper    33.4   ok
+    paper, 100 checked                                                      46.2   paper    46.2   ok
+    paper, 200 checked                                                      48.6   paper    48.6   ok
+    paper, 500 checked                                                      49.7   paper    49.7   ok
+    whole, 100 checked                                                      43.7   paper    43.7   ok
+    whole, 200 checked                                                      44.1   paper    44.1   ok
+    whole, 500 checked                                                      42.5   paper    42.5   ok
+    whole_search, 100 checked                                               45.0   paper    45.0   ok
+    whole_search, 200 checked                                               46.8   paper    46.8   ok
+    whole_search, 500 checked                                               47.3   paper    47.3   ok
+  INQUIRE-Fullrank siglip2_lc, search alone (mAP@50)                        38.3   paper    38.3   ok
+    paper, 100 checked                                                      46.7   paper    46.7   ok
+    paper, 200 checked                                                      48.0   paper    48.0   ok
+    paper, 500 checked                                                      49.0   paper    49.0   ok
+    whole, 100 checked                                                      44.3   paper           
+    whole, 200 checked                                                      43.4   paper           
+    whole, 500 checked                                                      42.0   paper           
+    whole_search, 100 checked                                               45.8   paper           
+    whole_search, 200 checked                                               46.5   paper           
+    whole_search, 500 checked                                               47.1   paper           
+  DOCCI all sentences, search alone (exact first, %)                        75.4   paper    75.4   ok
+  DOCCI all sentences, with the verifier                                    98.4   paper    98.4   ok
+  Winoground group score                                                    78.8   paper    78.8   ok
+Sec. 3-4 text
+  INQUIRE-Rerank, SigLIP2 with the query as written (AP)                    48.4   paper    48.4   ok
+  INQUIRE-Rerank, whole query alone                                         58.8   paper    58.8   ok
+    with the search score                                                   62.5   paper    62.5   ok
+  share of each query's relevant photos in vith_lc's top 500 (%)            71.7   paper    71.7   ok
+  share of each query's relevant photos in siglip2_lc's top 500 (%)         72.1   paper    72.1   ok
+  ViT-H, 500 checked: matches in our top 50 from below rank 100 (%)           17   paper      17   ok
+  below rank 200: whole query says yes, photos per query                     123   paper     123   ok
+    of which matches (%)                                                      17   paper      17   ok
+    turned away by a statement, per query                                     72   paper      72   ok
+    of which matches (%)                                                      10   paper      10   ok
+  INQUIRE-Rerank: input tokens per photo, seven questions                   1047   paper    1050   ok
+    verifier cost per query, 100 photos at $0.042 per million (cents)      0.440   paper           
+  INQUIRE-Rerank: verifier cost per query, from the run's ledger ($)      0.0044   paper  0.0044   ok
+    writing the statements, per query ($)                                 0.0027   paper  0.0027   ok
+    together ($)                                                          0.0071   paper  0.0071   ok
+  larger question set: questions per photo (INQUIRE-Rerank)                 15.7   paper    15.7   ok
+    INQUIRE-Rerank AP with it (from 63.9)                                   67.5   paper    67.5   ok
+    gain (Table 4: +3.6 on test)                                             3.6   paper     3.6   ok
+    95% CI, low                                                              1.8   paper     1.8   ok
+    95% CI, high                                                             5.5   paper     5.5   ok
+    with the LLM's brief, D&C's 154 queries (AP)                            69.1   paper    69.1   ok
+    Fullrank validation: gain (Table 4: +0.2)                                0.2   paper     0.2   ok
+    DOCCI: the brief's change ("lowers DOCCI by 2.7")                       -2.7   paper    -2.7   ok
+  test queries with GPT-4o's released answers                                160   paper     160   ok
+  ViT-H pool, 100 checked: paired gain over GPT-4o (mAP@50)                  2.6   paper     2.6   ok
+    95% CI, low                                                              0.9   paper     0.9   ok
+    95% CI, high                                                             4.4   paper     4.4   ok
+Supplement: which answers make depth pay (INQUIRE-Fullrank test, mAP@50)
+  vith_lc: whole, 100 checked                                               43.7   supp    43.7   ok
+  vith_lc: whole, 200 checked                                               44.1   supp    44.1   ok
+  vith_lc: whole, 500 checked                                               42.5   supp    42.5   ok
+  vith_lc: no_search, 100 checked                                           45.0   supp    45.0   ok
+  vith_lc: no_search, 200 checked                                           45.3   supp    45.3   ok
+  vith_lc: no_search, 500 checked                                           43.9   supp    43.9   ok
+  vith_lc: whole_search, 100 checked                                        45.0   supp    45.0   ok
+  vith_lc: whole_search, 200 checked                                        46.8   supp    46.8   ok
+  vith_lc: whole_search, 500 checked                                        47.3   supp    47.3   ok
+  vith_lc: statements_search, 100 checked                                   44.6   supp    44.6   ok
+  vith_lc: statements_search, 200 checked                                   46.3   supp    46.3   ok
+  vith_lc: statements_search, 500 checked                                   47.3   supp    47.3   ok
+  vith_lc: whole_rating_search, 100 checked                                 45.3   supp    45.3   ok
+  vith_lc: whole_rating_search, 200 checked                                 47.4   supp    47.4   ok
+  vith_lc: whole_rating_search, 500 checked                                 48.1   supp    48.1   ok
+  vith_lc: paper, 100 checked                                               46.2   supp    46.2   ok
+  vith_lc: paper, 200 checked                                               48.6   supp    48.6   ok
+  vith_lc: paper, 500 checked                                               49.7   supp    49.7   ok
+  vith_lc: full score minus whole query + search, 100 checked                1.2   supp     1.2   ok
+    95% CI low                                                               0.6   supp     0.6   ok
+    95% CI high                                                              1.8   supp     1.8   ok
+  vith_lc: full score minus whole query + search, 500 checked                2.4   supp     2.4   ok
+    95% CI low                                                               1.4   supp     1.4   ok
+    95% CI high                                                              3.5   supp     3.5   ok
+  siglip2_lc: whole, 100 checked                                            44.3   supp    44.3   ok
+  siglip2_lc: whole, 200 checked                                            43.4   supp    43.4   ok
+  siglip2_lc: whole, 500 checked                                            42.0   supp    42.0   ok
+  siglip2_lc: no_search, 100 checked                                        44.7   supp    44.7   ok
+  siglip2_lc: no_search, 200 checked                                        44.2   supp    44.2   ok
+  siglip2_lc: no_search, 500 checked                                        43.1   supp    43.1   ok
+  siglip2_lc: whole_search, 100 checked                                     45.8   supp    45.8   ok
+  siglip2_lc: whole_search, 200 checked                                     46.5   supp    46.5   ok
+  siglip2_lc: whole_search, 500 checked                                     47.1   supp    47.1   ok
+  siglip2_lc: statements_search, 100 checked                                45.3   supp    45.3   ok
+  siglip2_lc: statements_search, 200 checked                                46.4   supp    46.4   ok
+  siglip2_lc: statements_search, 500 checked                                47.0   supp    47.0   ok
+  siglip2_lc: whole_rating_search, 100 checked                              46.2   supp    46.2   ok
+  siglip2_lc: whole_rating_search, 200 checked                              47.2   supp    47.2   ok
+  siglip2_lc: whole_rating_search, 500 checked                              48.0   supp    48.0   ok
+  siglip2_lc: paper, 100 checked                                            46.7   supp    46.7   ok
+  siglip2_lc: paper, 200 checked                                            48.0   supp    48.0   ok
+  siglip2_lc: paper, 500 checked                                            49.0   supp    49.0   ok
+  siglip2_lc: full score minus whole query + search, 100 checked             1.0   supp     1.0   ok
+    95% CI low                                                               0.4   paper           
+    95% CI high                                                              1.6   paper           
+  siglip2_lc: full score minus whole query + search, 500 checked             2.0   supp     2.0   ok
+    95% CI low                                                               1.1   supp     1.1   ok
+    95% CI high                                                              2.9   supp     2.9   ok
+Table 2. Is the top result right?
+  s1: top result right (%)                                                  50.0   paper    50.0   ok
+  s1: verifier's lead, sure for (%)                                           38   paper      38   ok
+  s1: verifier's lead, right (%)                                            90.7   paper    90.7   ok
+  s1: search margin, sure for (%)                                             16   paper      16   ok
+  s1: search margin, right (%)                                              91.1   paper    91.1   ok
+  s2: top result right (%)                                                  76.2   paper    76.2   ok
+  s2: verifier's lead, sure for (%)                                           65   paper      65   ok
+  s2: verifier's lead, right (%)                                            96.4   paper    96.4   ok
+  s2: search margin, sure for (%)                                             16   paper      16   ok
+  s2: search margin, right (%)                                              98.2   paper    98.2   ok
+  s3: top result right (%)                                                  87.8   paper    87.8   ok
+  s3: verifier's lead, sure for (%)                                           77   paper      77   ok
+  s3: verifier's lead, right (%)                                            99.0   paper    99.0   ok
+  s3: search margin, sure for (%)                                             19   paper      19   ok
+  s3: search margin, right (%)                                              98.7   paper    98.7   ok
+  s4: top result right (%)                                                  92.8   paper    92.8   ok
+  s4: verifier's lead, sure for (%)                                           85   paper      85   ok
+  s4: verifier's lead, right (%)                                            99.6   paper    99.6   ok
+  s4: search margin, sure for (%)                                             23   paper      23   ok
+  s4: search margin, right (%)                                              98.8   paper    98.8   ok
+  all: top result right (%)                                                 98.4   paper    98.4   ok
+  all: verifier's lead, sure for (%)                                          93   paper      93   ok
+  all: verifier's lead, right (%)                                           99.9   paper    99.9   ok
+  all: search margin, sure for (%)                                            27   paper      27   ok
+  all: search margin, right (%)                                            100.0   paper   100.0   ok
+  pooled: top result right                                                  81.0   paper    81.0   ok
+  pooled: verifier's lead, sure for                                           72   paper      72   ok
+  pooled: verifier's lead, right                                            98.0   paper    98.0   ok
+  pooled: search margin, sure for                                             20   paper      20   ok
+  pooled: search margin, right                                              97.8   paper    97.8   ok
+  threshold from all 2,500 sentence-level queries                          0.114   paper   0.114   ok
+    from half the targets: mean                                            0.115   paper   0.115   ok
+    sd                                                                     0.009   paper           
+  held out: targets                                                          500   paper     500   ok
+  held out: top result right (%)                                            98.6   paper    98.6   ok
+  held out: verifier's lead, sure for                                         95   paper      95   ok
+  held out: verifier's lead, right                                          99.8   paper    99.8   ok
+    right                                                                    475   paper     475   ok
+    of sure                                                                  476   paper     476   ok
+  held out: search margin, sure for                                           35   paper      35   ok
+  held out: search margin, right                                            96.6   paper    96.6   ok
+Sec. 5 text
+  lead separates right from wrong, one sentence (AUROC)                     0.87   paper    0.87   ok
+    all sentences                                                           0.99   paper    0.99   ok
+  lead from whole: sure for (%)                                               65   paper      65   ok
+  lead from whole_search: sure for (%)                                        69   paper      69   ok
+  lead from paper: sure for (%)                                               72   paper      72   ok
+  s1: queries with five or more photos passing every question (%)             24   paper      24   ok
+    top photo right for those (%)                                             14   paper      14   ok
+  s2: queries with five or more photos passing every question (%)              4   paper       4   ok
+  Winoground: smallest of four margins, right vs wrong groups (AUROC)       0.93   paper    0.93   ok
+Table 3. Retrieval accuracy and description use on DOCCI
+  fixed: 2 sentences, R@1 (%)                                               76.2   paper    76.2   ok
+    mean sentences                                                          2.00   paper    2.00   ok
+  fixed: 4 sentences, R@1 (%)                                               92.8   paper    92.8   ok
+    mean sentences actually used (the table prints the budget, 4.00)        3.92   paper           
+    descriptions with fewer than four sentences                               37   paper           
+  fixed: full description, R@1 (%)                                          98.4   paper    98.4   ok
+    mean sentences                                                          7.29   paper    7.29   ok
+  adaptive: margin threshold, SigLIP2, R@1 (%)                              75.5   paper    75.5   ok
+    mean sentences                                                          5.76   paper    5.76   ok
+  adaptive: margin threshold, Jev + SigLIP2, R@1 (%)                        93.0   paper    93.0   ok
+    mean sentences                                                          2.55   paper    2.55   ok
+  Sec. 6: interactions that end because the margin crosses (%)              95.8   paper    95.8   ok
+    those returns right (%)                                                 93.6   paper    93.6   ok
+    interactions that exhaust the description (%)                            4.2   paper     4.2   ok
+    those return the target (%)                                             79.3   paper    79.3   ok
+    photos checked per interaction (100 per round; not in the paper)         221   paper           
+  adaptive: expand before asking, R@1 (%)                                   93.0   paper    93.0   ok
+    mean sentences                                                          2.42   paper    2.42   ok
+  INQUIRE test, 100,000 photos: ECE of P(yes) to the whole query            0.32   paper    0.32   ok
+    ECE of the calibrated match probability                                 0.02   paper    0.02   ok
+    photos above 0.9                                                         198   paper     198   ok
+    relevant (%)                                                              95   paper      95   ok
+  Sec. 6 next-batch predictor: (query, depth) points on test                1000   paper    1000   ok
+    AUROC                                                                   0.80   paper    0.80   ok
+    says 20-40%: true rate                                                    26   paper      26   ok
+    says 95-100%: true rate                                                   96   paper      96   ok
+  Table 4: count of matches in the 500, off per query by                      39   paper      39   ok
+    on a mean of                                                            64.7   paper    64.7   ok
+Sec. 6 text: candidate expansion
+  s1: targets the answers' 100 recover that then rank first (%)               10   paper           
+  one sentence: missing targets the answers' next 100 bring in                40   paper      40   ok
+    the search's next 100                                                     27   paper      27   ok
+  s1: exact, first 100 photos                                               50.0   paper    50.0   ok
+  s1: exact, + the answers' next 100                                        51.2   paper    51.2   ok
+  s1: exact, + the search's next 100                                        51.0   paper           
+  s2: targets the answers' 100 recover that then rank first (%)               50   paper      50   ok
+  s2: exact, first 100 photos                                               76.2   paper    76.2   ok
+  s2: exact, + the answers' next 100                                        79.4   paper           
+  s2: exact, + the search's next 100                                        77.4   paper           
+  two sentences: the answers' next 100 add (points)                          3.2   paper     3.2   ok
+    more than the search's next 100                                          2.0   paper     2.0   ok
+    95% CI low                                                               0.8   paper     0.8   ok
+    95% CI high                                                              3.2   paper     3.2   ok
+  s3: targets the answers' 100 recover that then rank first (%)               69   paper           
+  s4: targets the answers' 100 recover that then rank first (%)               92   paper      92   ok
+  one more sentence, s1 to s2: R@1 gain (points)                            26.2   paper    26.2   ok
+  one more sentence, s2 to s3: R@1 gain (points)                            11.6   paper    11.6   ok
+  one more sentence, s3 to s4: R@1 gain (points)                             5.0   paper     5.0   ok
+Sec. 7 and Table 4
+  detect a missing target, s1: AUROC of the top score                       0.59   paper    0.59   ok
+  detect a missing target, s2: AUROC of the top score                       0.74   paper           
+  detect a missing target, s3: AUROC of the top score                       0.87   paper           
+  detect a missing target, s4: AUROC of the top score                       0.99   paper    0.99   ok
+  perfect verification of ViT-H's top 500 (mAP@50)                          87.0   paper    87.0   ok
+  best one of the seven questions per query, chosen with labels (mAP@50)      54.1   paper    54.1   ok
+  species errors: the ranking itself (mAP@50)                               49.7   paper    49.7   ok
+    with the species known (labels move other species down)                 70.7   paper    70.7   ok
+    with state and view known instead                                       56.5   paper    56.5   ok
+    same genus: passes every question (%)                                     19   paper      19   ok
+    same family: passes every question (%)                                    23   paper      23   ok
+    top 50: another species (%) (Sec. 7: more than a third)                 38.8   supp    38.8   ok
+    top 50: relevant (%)                                                    44.0   supp    44.0   ok
+    top 50: right species, not relevant (%)                                 17.2   supp    17.2   ok
+    relevant photos passing every question (%)                                63   supp      63   ok
+    same species, not relevant, passing (%)                                   11   supp      11   ok
+  report uncertainty: 'too unclear' the likeliest answer, lowest group (%)         0   paper       0   ok
+    highest group (%) (Table 4: 0-3%)                                          3   paper       3   ok
+    can't-judge evidence, wrongly rejected matches, plainly (%)              6.9   supp     6.9   ok
+    with the brief (%)                                                       7.2   supp     7.2   ok
+    correctly rejected photos, plainly (%)                                  15.6   supp    15.6   ok
+    with the brief (%)                                                      18.3   supp    18.3   ok
+    validation: chosen low (%)                                                 0   paper           
+    validation: chosen high (%)                                                8   paper           
+    validation: wrongly rejected, plain (%)                                  9.3   paper           
+    validation: wrongly rejected, brief (%)                                 11.5   paper           
+    validation: correctly rejected, plain (%)                               17.4   paper           
+    validation: correctly rejected, brief (%)                               20.5   paper           
+  rewording: relevant photos in the union of the searches' top 20 (%)       49.9   paper    49.9   ok
+    in the query's own ranking at the same number of photos (%)             55.4   paper    55.4   ok
+  LLM text with the query: more relevant photos in the next 100, test (points)       3.9   paper     3.9   ok
+    validation (points)                                                      0.1   paper     0.1   ok
+  steered by the answers: more relevant photos in the next 100 (points)       1.3   paper     1.3   ok
+    steered with the labels instead (points)                                 6.7   paper     6.7   ok
+    SigLIP2's search for the query, next 100 (% of relevant)                14.9   supp    14.9   ok
+    steered by the answers (%)                                              16.2   supp    16.2   ok
+    difference, 95% interval: low                                            0.2   supp     0.2   ok
+    high                                                                     2.3   supp     2.3   ok
+    steered with the labels (%)                                             21.6   supp    21.6   ok
+    validation: SigLIP2's search (%)                                        15.1   supp    15.1   ok
+    validation: steered (%)                                                 17.9   supp    17.9   ok
+    validation: difference (points)                                          2.9   supp     2.9   ok
+    low                                                                      1.0   supp     1.0   ok
+    high                                                                     4.7   supp     4.7   ok
+    validation: with the labels (points)                                     5.6   supp     5.6   ok
+Figures 2 and 3
+  Fig. 2: threshold for the whole query + search (from all 2,500)          0.155   paper   0.155   ok
+    docci1923, two sentences: lead with all seven questions                 0.14   paper    0.14   ok
+    lead with the whole query + search                                      0.06   paper    0.06   ok
+    verifier score, target                                                  0.80   paper    0.80   ok
+    verifier score, search's first pick                                     0.65   paper    0.65   ok
+    target's search rank                                                       7   paper       7   ok
+  Fig. 3, test_135: matches in the verifier's top 50                          49   paper      49   ok
+    from below search rank 100                                                32   paper      32   ok
+Supplement: example figures
+  Fig. S4, docci4982: sentences in the description                            11   supp      11   ok
+    search puts a look-alike first, by (similarity)                       0.0001   supp  0.0001   ok
+    Jev + SigLIP2, target                                                   0.88   supp    0.88   ok
+    Jev + SigLIP2, the look-alike                                           0.50   supp    0.50   ok
+    lead with 1 sentence(s) (wrong first; threshold 0.114)                 0.035   paper           
+    lead with 2 sentence(s) (wrong first; threshold 0.114)                 0.073   paper           
+    lead with 3 sentence(s) (wrong first; threshold 0.114)                 0.013   paper           
+    lead with 4 sentence(s) (right first; threshold 0.114)                 0.150   supp   0.150   ok
+  Fig. S5: search's first pick within this of the target (five panels)    0.0004   supp  0.0004   ok
+    last panel: the verifier's lead for a wrong photo                       0.01   supp    0.01   ok
+Supplement: the open verifier Clef-Flash, same questions, 100 photos
+  DOCCI s1: exact first (%)                                                 49.6   supp    49.6   ok
+  DOCCI s2: exact first (%)                                                 74.0   paper           
+  DOCCI s3: exact first (%)                                                 85.4   paper           
+  DOCCI s4: exact first (%)                                                 92.0   paper           
+  DOCCI all: exact first (%)                                                97.0   paper    97.0   ok
+  INQUIRE-Rerank (AP)                                                       63.4   paper    63.4   ok
+  INQUIRE-Fullrank vith_lc, 100 checked (mAP@50)                            45.9   paper           
+  INQUIRE-Fullrank siglip2_lc, 100 checked (mAP@50)                         46.4   paper           
+  lead, threshold on its own scale: sure for (%)                              68   paper      68   ok
+    right (%)                                                               98.0   paper    98.0   ok
+    threshold from half the targets: mean                                  0.154   paper           
+Supplement: fusion without weights (each signal standardised over the pool, summed)
+  INQUIRE-Rerank (AP), against 63.9                                         63.5   paper           
+  DOCCI s1: exact first (%)                                                 49.6   paper           
+  DOCCI s2: exact first (%)                                                 75.2   paper           
+  DOCCI s3: exact first (%)                                                 87.4   paper           
+  DOCCI s4: exact first (%)                                                 92.8   paper           
+  DOCCI all: exact first (%)                                                98.6   paper           
+  DOCCI pooled exact first, against 81.0                                    80.7   supp    80.7   ok
+
+165 of 165 numbers printed in the paper match; 75 of 75 values of the draft supplement tables match; 41 more values computed for the supplement

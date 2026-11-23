@@ -1,0 +1,27 @@
+# the released answers live outside the repository (see qr/data.py data_root)
+local.json
+/data/
+*.parquet
+# GPT-4o's answers, INQUIRE's data (scripts/gpt4o_answers.py): never committed or uploaded
+external/
+# identifying terms for scripts/anon_scan.py: never committed
+anon_terms.txt
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+# scratch
+*.log
+*.tmp
+*.part
+_to_delete/
+# LaTeX build files of the supplement (supp.pdf is kept)
+supplement/*.aux
+supplement/*.bbl
+supplement/*.blg
+supplement/*.brf
+supplement/*.fdb_latexmk
+supplement/*.fls
+supplement/*.out
+supplement/*.synctex.gz

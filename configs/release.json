@@ -1,0 +1,7 @@
+{
+ "repo_id": "QuestioningRetrieval/questioning-retrieval-answers",
+ "repo_type": "dataset",
+ "revision": "main",
+ "base_url": "https://huggingface.co/datasets/QuestioningRetrieval/questioning-retrieval-answers/resolve/main",
+ "note": "the released answers (29 folders, 101 parquet tables, 102 MB); scripts/fetch_data.py downloads them and checks sha256 against configs/data_manifest.json."
+}
